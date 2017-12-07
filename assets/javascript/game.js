@@ -18,11 +18,17 @@ var computerChoices = ["a", "b", "c", "d", "e"];
     var guessesLeft = 10; 
     var pastUserEntries = 0;
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-     var userTyped = document.getElementById("user-typed");
+
+    var userType = document.getElementById;    
+        document.onkeyup = function(showTyped) {
+        userType.textContent = document.getElementById("user-typed");
+     	 };
 
     document.onkeyup = function(event) {
+
+
      	var userGuess = event.key;
- 	 	userText.textContent = event.key;
+ 	 	
  	 	document.querySelector("#user-entries").innerHTML = ++pastUserEntries;
  	 	document.querySelector("#guessleft-entry").innerHTML = --guessesLeft;
  	
