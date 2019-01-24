@@ -4,7 +4,7 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
     var losses = 0;
     var guesses = 0; 
     var guessesLeft = 10; 
-    var guessArray=[];
+    var guessArray = [];
     var pastUserEntries = 0;
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     console.log(computerGuess);
