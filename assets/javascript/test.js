@@ -10,7 +10,6 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
     console.log(computerGuess);
 
     document.onkeyup = function(event) {
-
      	var userGuess = event.key;
      	guessArray.push(userGuess);
  	 	
@@ -37,7 +36,6 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
     		reset();
 		}
  	}
-
  };
 
  function reset(){
