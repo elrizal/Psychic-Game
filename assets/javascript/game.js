@@ -34,7 +34,9 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
  			document.querySelector("#loss-entries").innerHTML = ++losses;
  			alert("You win!");
  			reset();
-
+			 $('#myModal').on('shown.bs.modal', function () {
+				$('#myInput').trigger('focus')
+			  })
  			}
 
  	if (userGuess !== computerGuess) {
@@ -42,7 +44,10 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 		
 		if (guesses === 10) {
     		alert("You loose!");
-    		document.querySelector("#win-entries").innerHTML = ++wins;
+			document.querySelector("#win-entries").innerHTML = ++wins;
+			$('#myModal').on('shown.bs.modal', function () {
+				$('#myInput').trigger('focus')
+			  })
     		reset();
 		}
  	}
